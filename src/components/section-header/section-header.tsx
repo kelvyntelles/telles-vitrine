@@ -7,7 +7,7 @@ type SectionHeaderProps = {
 
 export const SectionHeader = ({ titulo, subtitulo }: SectionHeaderProps) => {
     return (
-        <div className="mb-6">
+        <div>
             <h2 className="text-xl font-bold flex items-center gap-2 mb-2">
             <Minus className="text-brand" />
                 {titulo}
