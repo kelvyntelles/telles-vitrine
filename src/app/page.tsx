@@ -38,6 +38,7 @@ export default function Home() {
               nome={anuncio.nome}
               descricao={anuncio.descricao}
               localizacao={`${anuncio.localizacao.cidade} - ${anuncio.localizacao.estado}`}
+              slug={anuncio.slug}
             />
           ))}
         </div>

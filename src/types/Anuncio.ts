@@ -24,8 +24,6 @@ export interface Anuncio {
   logo: string;
   capa: string;
   localizacao: Localizacao;
-  status: string;
-  horario: string;
   whatsapp: string;
   instagram: string;
   sobre: string;

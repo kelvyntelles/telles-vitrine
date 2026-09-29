@@ -13,9 +13,10 @@ type AnuncioProps = {
     nome: string,
     descricao: string,
     localizacao: string,
+    slug: string,
 }
 
-export const AnuncioCard = ({ imagemCapa, categoria, nome, descricao, localizacao }: AnuncioProps) => {
+export const AnuncioCard = ({ imagemCapa, categoria, nome, descricao, localizacao, slug }: AnuncioProps) => {
     return (
         <Card className="w-full max-w-sm ring-0 shadow border border-neutral-800">
             <Image
@@ -35,7 +36,7 @@ export const AnuncioCard = ({ imagemCapa, categoria, nome, descricao, localizaca
             
             <CardFooter className="flex justify-between">
                 <Localizacao localizacao={localizacao} />
-                <Link href="/" className="text-brand flex items-center gap-1">
+                <Link href={`/anuncio/${slug}/`} className="text-brand flex items-center gap-1">
                     Ver anúncio
                     <ArrowRight size={14} />
                 </Link>

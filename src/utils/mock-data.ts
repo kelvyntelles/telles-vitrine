@@ -15,8 +15,6 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Rua das Flores, 123 - Centro"
       },
-      "status": "Aberto agora",
-      "horario": "18:00 às 23:00",
       "whatsapp": "(24) 99999-9999",
       "instagram": "@bellamassa",
       "sobre": "A Pizzaria Bella Massa nasceu da paixão por boa comida e do desejo de oferecer uma experiência única em Vassouras. Com ingredientes selecionados, massa artesanal e um cardápio variado, buscamos sempre surpreender nossos clientes com muito sabor e qualidade.",
@@ -79,8 +77,6 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Centro - Vassouras, RJ"
       },
-      "status": "Online",
-      "horario": "24 horas",
       "whatsapp": "(24) 99999-9999",
       "instagram": "@tellesnoticias",
       "sobre": "O Telles Notícias leva informação, notícias e acontecimentos da região para você acompanhar tudo o que acontece de mais importante.",
@@ -130,8 +126,6 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Av. Principal, 250 - Centro"
       },
-      "status": "Aberto agora",
-      "horario": "06:00 às 22:00",
       "whatsapp": "(24) 98888-8888",
       "instagram": "@studiofitness",
       "sobre": "Um espaço preparado para ajudar você a alcançar seus objetivos com acompanhamento, equipamentos de qualidade e um ambiente motivador.",
@@ -189,9 +183,7 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Rua Luiz Capute, 133, Centro"
       },
-      "status": "Aberto agora",
-      "horario": "09:00 às 19:00",
-      "whatsapp": "(24) 97400-4409",
+      "whatsapp": "24974004409",
       "instagram": "@lctelles07",
       "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.",
       "diferenciais": [
