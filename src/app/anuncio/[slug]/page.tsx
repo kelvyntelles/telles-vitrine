@@ -46,23 +46,38 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
             />
 
             <div className="meu-container flex-1">
-                <div className="pb-3">
+                <div className="pb-5">
                     <SectionHeader 
                         titulo="Sobre nós" 
                         subtitulo={anuncio.sobre}
                     />
                     { anuncio.diferenciais.length >= 1 ? 
-                        <div className="mt-2 grid grid-cols-2 md:grid-cols-6 gap-2">
-                            {anuncio.diferenciais.map((diferencial, index) => (
-                                <div key={index} className="p-2 border border-brand rounded text-center text-secondary text-xs">
-                                    {diferencial}
-                                </div>
-                            ))}
-                        </div>
-                    : 
-                        "" 
-                    }
+                    <div className="mt-2 grid grid-cols-2 md:grid-cols-6 gap-2">
+                        {anuncio.diferenciais.map((diferencial, index) => (
+                            <div key={index} className="p-2 border border-neutral-700 rounded text-center text-secondary text-xs">
+                                {diferencial}
+                            </div>
+                        ))}
+                    </div>
+                    : "" }
                 </div>
+
+                { anuncio.servicos ? 
+                <div className="pb-5">
+                    <SectionHeader 
+                        titulo="Nossos serviços" 
+                        subtitulo="Confira o que temos de melhor para você."
+                    />
+                    <div className="mt-2 grid grid-cols-2 md:grid-cols-4 gap-2">
+                        {anuncio.servicos.map((servico, index) => (
+                            <div className="flex flex-col gap-2 p-2 border rounded border-neutral-700" key={index}>
+                                <h3 className="font-bold">{servico.nome}</h3>
+                                <p className="text-xs text-secondary">{servico.descricao}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                : "" }
             </div>
             
             <Footer />

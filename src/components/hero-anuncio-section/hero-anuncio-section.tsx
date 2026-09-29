@@ -39,7 +39,7 @@ export const HeroAnuncioSection = ({ capa, logo, nome, categoria, descricao, loc
                     <Localizacao localizacao={localizacao} />
 
                     <Link href={`https://wa.me/55${whatsapp}`} target="_blank">
-                        <Button variant="brand" className="mt-2 cursor-pointer">
+                        <Button variant="brand" className="mt-2 cursor-pointer w-full md:w-auto">
                             <Phone />
                             Falar no WhatsApp
                         </Button>
