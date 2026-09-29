@@ -5,27 +5,36 @@ import { Badge } from "../badge"
 import { Localizacao } from "../localizacao"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { ArrowRight } from "lucide-react"
+import { TextoLimitado } from "@/utils/texto-limitado"
 
-export const AnuncioCard = () => {
+type AnuncioProps = {
+    imagemCapa: string,
+    categoria: string,
+    nome: string,
+    descricao: string,
+    localizacao: string,
+}
+
+export const AnuncioCard = ({ imagemCapa, categoria, nome, descricao, localizacao }: AnuncioProps) => {
     return (
         <Card className="w-full max-w-sm ring-0 shadow border border-neutral-800">
             <Image
-                src="/images/pizzaria-bella-massa/capa.jpeg"
+                src={imagemCapa}
                 alt="Imagem de capa"
                 width={800}
                 height={200}
                 className="h-28 w-full object-cover"
             />
             <CardHeader>
-                <Badge titulo="Noticias"/>
-                <CardTitle>Telles Notícias</CardTitle>
+                <Badge titulo={categoria}/>
+                <CardTitle>{nome}</CardTitle>
                 <CardDescription className="text-secondary">
-                    a informação que você precisa, com credibilidade e agilidade.
+                    <TextoLimitado texto={descricao} limite={75} />
                 </CardDescription>
             </CardHeader>
             
             <CardFooter className="flex justify-between">
-                <Localizacao />
+                <Localizacao localizacao={localizacao} />
                 <Link href="/" className="text-brand flex items-center gap-1">
                     Ver anúncio
                     <ArrowRight size={14} />

@@ -1,13 +1,15 @@
-export const ANUNCIOS_DATA = [
+import { Anuncio } from "@/types/Anuncio";
+
+export const ANUNCIOS_DATA: Anuncio[] = [
     {
       "id": 1,
-      "ativo": true,
+      "ativo": false,
       "slug": "pizzaria-bella-massa",
       "nome": "Pizzaria Bella Massa",
       "categoria": "Restaurante",
       "descricao": "Pizzas artesanais, massas e muito mais para o seu momento especial. Sabor, qualidade e tradição em cada fatia.",
       "logo": "/images/anuncios/bella-massa/logo.png",
-      "capa": "/images/anuncios/bella-massa/capa.jpg",
+      "capa": "/images/pizzaria-bella-massa/capa.jpeg",
       "localizacao": {
         "cidade": "Vassouras",
         "estado": "RJ",
@@ -65,7 +67,7 @@ export const ANUNCIOS_DATA = [
     },
     {
       "id": 2,
-      "ativo": true,
+      "ativo": false,
       "slug": "telles-noticias",
       "nome": "Telles Notícias",
       "categoria": "Notícias",
@@ -116,7 +118,7 @@ export const ANUNCIOS_DATA = [
     },
     {
       "id": 3,
-      "ativo": true,
+      "ativo": false,
       "slug": "studio-fitness",
       "nome": "Studio Fitness",
       "categoria": "Academia",
@@ -176,22 +178,22 @@ export const ANUNCIOS_DATA = [
     {
       "id": 4,
       "ativo": true,
-      "slug": "barbearia-do-joao",
-      "nome": "Barbearia do João",
+      "slug": "lucas-telles-barbeiro",
+      "nome": "Lucas Telles",
       "categoria": "Barbearia",
-      "descricao": "Corte, barba e estilo com profissionais experientes.",
-      "logo": "/images/anuncios/barbearia-do-joao/logo.png",
-      "capa": "/images/anuncios/barbearia-do-joao/capa.jpg",
+      "descricao": "Barbeiro profissional",
+      "logo": "/images/lucas-telles-barbeiro/perfil.jpg",
+      "capa": "/images/lucas-telles-barbeiro/capa.jpeg",
       "localizacao": {
         "cidade": "Vassouras",
         "estado": "RJ",
-        "endereco": "Rua Central, 80 - Centro"
+        "endereco": "Rua Luiz Capute, 133, Centro"
       },
       "status": "Aberto agora",
       "horario": "09:00 às 19:00",
-      "whatsapp": "(24) 97777-7777",
-      "instagram": "@barbeariadojoao",
-      "sobre": "Uma barbearia criada para quem valoriza estilo, atendimento de qualidade e uma boa experiência.",
+      "whatsapp": "(24) 97400-4409",
+      "instagram": "@lctelles07",
+      "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.",
       "diferenciais": [
         "Profissionais experientes",
         "Ambiente moderno",
