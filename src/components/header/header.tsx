@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="meu-container py-3 flex items-center justify-between">
                 <Logo />
                 <Link
-                    href="https://wa.me/55992281699"
+                    href="https://wa.me/5524992281699"
                     target="_blank"
                 >
                     <Button variant="brand" className="cursor-pointer">
