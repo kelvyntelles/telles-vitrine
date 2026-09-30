@@ -201,12 +201,14 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "instagram": "@lctelles07",
         "instagram_url": "teste.com"
       },
-      "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.",
+      "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.\n\nEstou sempre praticando e aprendendo novos cortes e tendências para garantir que você saia daqui satisfeito e com o visual que deseja. Para mim, a barbearia vai além de um simples corte de cabelo ou barba — é uma experiência. Estou pronto para atender você com profissionalismo e qualidade!",
       "diferenciais": [
-        "Profissionais experientes",
+        "Profissional experiente",
         "Ambiente moderno",
         "Atendimento personalizado",
-        "Produtos de qualidade"
+        "Produtos de qualidade",
+        "Som ambiente",
+        "Higiene e organização"
       ],
       "servicos": [
         {
@@ -220,12 +222,17 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         {
           "nome": "Corte + Barba",
           "descricao": "O combo completo para renovar seu visual."
+        },
+        {
+          "nome": "Transformação Visual",
+          "descricao": "Do clássico platinado aos tons tradicionais que realçam o seu estilo com personalidade."
         }
       ],
       "galeria": [
-        "/images/lucas-telles-barbeiro/perfil.jpg",
-        "/images/lucas-telles-barbeiro/perfil.jpg",
-        "/images/lucas-telles-barbeiro/perfil.jpg"
+        "/images/lucas-telles-barbeiro/foto-01.jpg",
+        "/images/lucas-telles-barbeiro/foto-02.jpg",
+        "/images/lucas-telles-barbeiro/foto-03.jpg",
+        "/images/lucas-telles-barbeiro/foto-04.jpg",
       ],
       "horarios": [
         {

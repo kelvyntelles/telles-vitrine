@@ -12,7 +12,7 @@ export const SectionHeader = ({ titulo, subtitulo }: SectionHeaderProps) => {
             <Minus className="text-brand" />
                 {titulo}
             </h2>
-            {subtitulo && <p className="text-content-secondary text-xs">{subtitulo}</p>}
+            {subtitulo && <p className="text-content-secondary text-xs whitespace-pre-line">{subtitulo}</p>}
         </div>
     );
 };
