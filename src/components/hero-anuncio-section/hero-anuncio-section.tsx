@@ -26,7 +26,7 @@ export const HeroAnuncioSection = ({ capa, logo, nome, categoria, descricao, loc
                 className="object-cover hidden md:block"
             />
 
-            <div className="absolute inset-0 bg-background-primary md:bg-black/60" />
+            <div className="absolute inset-0 bg-background-primary md:bg-black/80" />
 
             <div className="meu-container relative z-10 flex flex-col-reverse gap-2 md:py-10 md:flex-row md:justify-between md:gap-0">
                 <div className="flex flex-col gap-2">
