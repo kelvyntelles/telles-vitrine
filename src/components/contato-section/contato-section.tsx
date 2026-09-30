@@ -27,8 +27,8 @@ export const ContatoSection = ({ anuncio }: ContatoSectionProps) => {
                     >
                         <div className="
                             flex items-start gap-3 
-                            border-b border-b-neutral-700 md:border-b-0 pb-2 md:pb-0
-                            md:border-r md:border-r-neutral-700
+                            border-b border-b-neutral-800 md:border-b-0 pb-2 md:pb-0
+                            md:border-r md:border-r-neutral-800
                         ">
                             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand/30 bg-brand/10 text-brand">
                                 <MessageCircle size={20} />
@@ -58,8 +58,8 @@ export const ContatoSection = ({ anuncio }: ContatoSectionProps) => {
                     >
                         <div className="
                             flex items-start gap-3 
-                            border-b border-b-neutral-700 md:border-b-0 pb-2 md:pb-0
-                            md:border-r md:border-r-neutral-700
+                            border-b border-b-neutral-800 md:border-b-0 pb-2 md:pb-0
+                            md:border-r md:border-r-neutral-800
                         ">
                             <div className="
                                 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brand/30 bg-brand/10 text-brand">
@@ -106,7 +106,7 @@ export const ContatoSection = ({ anuncio }: ContatoSectionProps) => {
 
                 <div className="flex flex-col md:flex-row md:gap-2">
                     {/* Horário de funcionamento */}
-                    <div className="rounded-lg border border-neutral-700 p-4 md:w-80">
+                    <div className="rounded-lg border border-neutral-800 p-4 md:w-80">
                         <div className="mb-4 flex items-center gap-3">
                             <div className="flex h-9 w-9 items-center justify-center rounded-full border border-brand/30 bg-brand/10 text-brand">
                                 <Clock3 size={18} />
