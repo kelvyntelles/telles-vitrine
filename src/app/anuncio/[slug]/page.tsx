@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/section-header/section-header";
 import { Anuncio } from "@/types/Anuncio";
 import { ANUNCIOS_DATA } from "@/utils";
 import { FaceSlightlyFrowning } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default async function AnuncioPage({ params }: {params: Promise<{ slug: string }>}) {
@@ -59,7 +60,7 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
                             </div>
                         ))}
                     </div>
-                    : "" }
+                    : null }
                 </div>
 
                 { anuncio.servicos ? 
@@ -77,9 +78,40 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
                         ))}
                     </div>
                 </div>
-                : "" }
-            </div>
-            
+                : null }
+
+                {anuncio.galeria ? (
+                    <div className="pb-5">
+                        <SectionHeader 
+                            titulo="Galeria" 
+                            subtitulo="Confira alguns momentos especiais do nosso espaço e dos nossos serviços."
+                        />
+
+                        <div className="
+                            mt-5
+                            flex gap-3 overflow-x-auto pb-3
+                            md:grid md:grid-cols-4 md:overflow-x-visible
+                        ">
+                            {anuncio.galeria.map((imagem, index) => (
+                                <div
+                                    key={index}
+                                    className="
+                                        relative h-48 w-64 shrink-0 overflow-hidden rounded-lg
+                                        md:h-56 md:w-full
+                                    "
+                                >
+                                    <Image
+                                        src={imagem}
+                                        alt={`Imagem ${index + 1} da galeria`}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ) : null }
+            </div>            
             <Footer />
         </div>
     )

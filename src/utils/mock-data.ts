@@ -207,9 +207,9 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         }
       ],
       "galeria": [
-        "/images/anuncios/barbearia-do-joao/galeria-1.jpg",
-        "/images/anuncios/barbearia-do-joao/galeria-2.jpg",
-        "/images/anuncios/barbearia-do-joao/galeria-3.jpg"
+        "/images/lucas-telles-barbeiro/perfil.jpg",
+        "/images/lucas-telles-barbeiro/perfil.jpg",
+        "/images/lucas-telles-barbeiro/perfil.jpg"
       ],
       "horarios": [
         {
