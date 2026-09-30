@@ -1,11 +1,13 @@
+import { ContatoSection } from "@/components/contato-section";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { HeroAnuncio } from "@/components/hero-anuncio";
 import { HeroAnuncioSection } from "@/components/hero-anuncio-section";
 import { Logo } from "@/components/logo";
 import { SectionHeader } from "@/components/section-header/section-header";
 import { Anuncio } from "@/types/Anuncio";
 import { ANUNCIOS_DATA } from "@/utils";
-import { FaceSlightlyFrowning } from "lucide-react";
+import { Camera, Clock3, FaceSlightlyFrowning, MapPin, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,7 +45,7 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
                 categoria={anuncio.categoria}
                 descricao={anuncio.descricao}
                 localizacao={`${anuncio.localizacao.cidade} - ${anuncio.localizacao.estado}`}
-                whatsapp={anuncio.whatsapp}
+                whatsapp={anuncio.contato.whatsapp}
             />
 
             <div className="meu-container pt-0 md:pt-6 flex-1">
@@ -111,7 +113,13 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
                         </div>
                     </div>
                 ) : null }
-            </div>            
+
+                {/* Seção de contatos do anuncio */}
+                <ContatoSection anuncio={anuncio} />
+
+            </div>
+
+            {/* Rodapé do site */}
             <Footer />
         </div>
     )

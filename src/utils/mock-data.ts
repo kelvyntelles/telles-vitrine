@@ -15,8 +15,12 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Rua das Flores, 123 - Centro"
       },
-      "whatsapp": "(24) 99999-9999",
-      "instagram": "@bellamassa",
+      "contato": {
+        "whatsapp": "24999999999",
+        "whatsapp_formatado": "(24) 99999-9999",
+        "instagram": "@teste",
+        "instagram_url": "https://teste.com"
+      },
       "sobre": "A Pizzaria Bella Massa nasceu da paixão por boa comida e do desejo de oferecer uma experiência única em Vassouras. Com ingredientes selecionados, massa artesanal e um cardápio variado, buscamos sempre surpreender nossos clientes com muito sabor e qualidade.",
       "diferenciais": [
         "Ingredientes selecionados",
@@ -77,8 +81,12 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Centro - Vassouras, RJ"
       },
-      "whatsapp": "(24) 99999-9999",
-      "instagram": "@tellesnoticias",
+      "contato": {
+        "whatsapp": "24999999999",
+        "whatsapp_formatado": "(24) 99999-9999",
+        "instagram": "@teste",
+        "instagram_url": "https://teste.com"
+      },
       "sobre": "O Telles Notícias leva informação, notícias e acontecimentos da região para você acompanhar tudo o que acontece de mais importante.",
       "diferenciais": [
         "Informação local",
@@ -126,8 +134,12 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Av. Principal, 250 - Centro"
       },
-      "whatsapp": "(24) 98888-8888",
-      "instagram": "@studiofitness",
+      "contato": {
+        "whatsapp": "24999999999",
+        "whatsapp_formatado": "(24) 99999-9999",
+        "instagram": "@teste",
+        "instagram_url": "https://teste.com"
+      },
       "sobre": "Um espaço preparado para ajudar você a alcançar seus objetivos com acompanhamento, equipamentos de qualidade e um ambiente motivador.",
       "diferenciais": [
         "Equipamentos modernos",
@@ -183,8 +195,12 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "estado": "RJ",
         "endereco": "Rua Luiz Capute, 133, Centro"
       },
-      "whatsapp": "24974004409",
-      "instagram": "@lctelles07",
+      "contato": {
+        "whatsapp": "24974004409",
+        "whatsapp_formatado": "(24) 97400-4409",
+        "instagram": "@lctelles07",
+        "instagram_url": "teste.com"
+      },
       "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.",
       "diferenciais": [
         "Profissionais experientes",

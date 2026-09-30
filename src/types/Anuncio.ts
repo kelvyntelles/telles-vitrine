@@ -14,6 +14,13 @@ export interface Horario {
   horario: string;
 }
 
+export interface Contato {
+  whatsapp: string;
+  whatsapp_formatado: string
+  instagram: string;
+  instagram_url: string;
+}
+
 export interface Anuncio {
   id: number;
   ativo: boolean;
@@ -24,8 +31,7 @@ export interface Anuncio {
   logo: string;
   capa: string;
   localizacao: Localizacao;
-  whatsapp: string;
-  instagram: string;
+  contato: Contato;
   sobre: string;
   diferenciais: string[];
   servicos: Servico[];
