@@ -45,7 +45,7 @@ export default async function AnuncioPage({ params }: {params: Promise<{ slug: s
                 whatsapp={anuncio.whatsapp}
             />
 
-            <div className="meu-container flex-1">
+            <div className="meu-container pt-0 md:pt-6 flex-1">
                 <div className="pb-5">
                     <SectionHeader 
                         titulo="Sobre nós" 
