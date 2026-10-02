@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Logo } from "../logo"
 import { Button } from "../ui/button"
 import { Volume2 } from "lucide-react"
+import Image from "next/image"
 
 export const Header = () => {
     return (

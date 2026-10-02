@@ -1,14 +1,13 @@
 import { ContatoSection } from "@/components/contato-section";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { HeroAnuncio } from "@/components/hero-anuncio";
 import { HeroAnuncioSection } from "@/components/hero-anuncio-section";
 import { Logo } from "@/components/logo";
 import { SectionHeader } from "@/components/section-header/section-header";
 import { ServicoCard } from "@/components/servico-card";
 import { Anuncio } from "@/types/Anuncio";
 import { ANUNCIOS_DATA } from "@/utils";
-import { Camera, Clock3, FaceSlightlyFrowning, MapPin, MessageCircle, Sparkles } from "lucide-react";
+import { FaceSlightlyFrowning } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

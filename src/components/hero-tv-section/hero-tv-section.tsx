@@ -4,8 +4,8 @@ export const HeroTvSection = () => {
     return (
         <div className="flex items-center justify-between">
             <div>
-            <Badge titulo="Bem-vindo ao" />
-            <h1 className="text-3xl md:text-5xl font-bold mt-2 mb-2">Telles <span className="text-brand">Vitrine</span></h1>
+            <Badge titulo="Bem-vindo à" />
+            <h1 className="text-3xl md:text-5xl font-bold mt-2 mb-2">Vitrine<span className="text-brand">+</span></h1>
             <p className="text-content-secondary text-xs md:text-sm">
                 Encontre negócios, produtos e serviços da nossa região.
             </p>

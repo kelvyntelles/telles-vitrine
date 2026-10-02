@@ -18,8 +18,8 @@ const interTight = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Telles Vitrine",
-  description: "Aqui você pode ver as empresas, serviços e produtos mais relevantes da região.",
+  title: "Vitrine+",
+  description: "Sua empresa em destaque",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
