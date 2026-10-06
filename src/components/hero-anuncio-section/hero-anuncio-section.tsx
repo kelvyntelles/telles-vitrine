@@ -15,45 +15,69 @@ type HeroAnuncioSectionProps = {
     whatsapp: string,
 }
 
-export const HeroAnuncioSection = ({ capa, logo, nome, categoria, descricao, localizacao, whatsapp }: HeroAnuncioSectionProps) => {
+export const HeroAnuncioSection = ({
+    capa,
+    logo,
+    nome,
+    categoria,
+    descricao,
+    localizacao,
+    whatsapp,
+}: HeroAnuncioSectionProps) => {
     return (
-        <section className="relative overflow-hidden">
-            <Image
-                src={capa}
-                alt=""
-                fill
-                priority
-                className="object-cover hidden md:block"
-            />
+        <section className="overflow-hidden">
+            {/* Capa */}
+            <div className="relative h-56 w-full md:h-72">
+                <Image
+                    src={capa}
+                    alt={`Capa de ${nome}`}
+                    fill
+                    priority
+                    className="object-cover"
+                />
+            </div>
 
-            <div className="absolute inset-0 bg-background-primary md:bg-black/80" />
+            {/* Conteúdo */}
+            <div className="meu-container">
+                <div className="flex flex-col md:flex-row md:items-start md:gap-8">
+                    {/* Logo */}
+                    <div className="relative z-10 -mt-20 flex justify-center md:mt-0 md:pt-8">
+                        <div className="rounded-2xl border-4 border-background-primary bg-background-primary shadow-lg">
+                            <Image
+                                src={logo}
+                                alt={`Logo de ${nome}`}
+                                width={150}
+                                height={150}
+                                className="h-32 w-32 rounded-xl object-cover md:h-37.5 md:w-37.5"
+                            />
+                        </div>
+                    </div>
 
-            <div className="meu-container relative z-10 flex flex-col-reverse gap-2 md:py-10 md:flex-row md:justify-between md:gap-0">
-                <div className="flex flex-col gap-2">
-                    <HeroAnuncio
-                        categoria={categoria}
-                        nome={nome}
-                        descricao={descricao}
-                    />
+                    {/* Informações */}
+                    <div className="flex flex-1 flex-col gap-3 pb-8 pt-4 md:pt-8">
+                        <HeroAnuncio
+                            categoria={categoria}
+                            nome={nome}
+                            descricao={descricao}
+                        />
 
-                    <Localizacao localizacao={localizacao} />
+                        <Localizacao localizacao={localizacao} />
 
-                    <Link href={`https://wa.me/55${whatsapp}`} target="_blank">
-                        <Button variant="brand" className="mt-2 cursor-pointer w-full md:w-auto">
-                            <Phone />
-                            Falar no WhatsApp
-                        </Button>
-                    </Link>
-                </div>
-
-                <div className="flex w-full justify-center md:w-auto">
-                    <Image
-                        src={logo}
-                        alt="Lucas Telles"
-                        width={150}
-                        height={150}
-                        className="w-full rounded-2xl object-cover md:w-37.5"
-                    />
+                        <Link
+                            href={`https://wa.me/55${whatsapp}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full md:w-fit"
+                        >
+                            <Button
+                                variant="brand"
+                                className="mt-2 w-full cursor-pointer md:w-auto"
+                            >
+                                <Phone />
+                                Falar no WhatsApp
+                            </Button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

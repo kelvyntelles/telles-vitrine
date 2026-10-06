@@ -22,8 +22,8 @@ export default function Home() {
       <div className="meu-container flex-1">
         <HeroTvSection />
 
-        <div className="mt-8 pb-3">
-          <SectionHeader 
+        <div id="anuncios" className="mt-8 pb-3">
+          <SectionHeader
             titulo="Confira os anúncios" 
             subtitulo="Conheça os melhores negócios, produtos e serviços da nossa região." 
           />
@@ -33,7 +33,7 @@ export default function Home() {
           {anunciosAtivos.map((anuncio) => (
             <AnuncioCard 
               key={anuncio.id} 
-              imagemCapa={anuncio.capa}
+              imagemLogo={anuncio.logo}
               categoria={anuncio.categoria}
               nome={anuncio.nome}
               descricao={anuncio.descricao}

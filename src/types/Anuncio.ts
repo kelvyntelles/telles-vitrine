@@ -19,6 +19,8 @@ export interface Contato {
   whatsapp_formatado: string
   instagram: string;
   instagram_url: string;
+  site: string;
+  site_url: string;
 }
 
 export interface Anuncio {

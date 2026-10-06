@@ -19,7 +19,9 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "whatsapp": "24999691395",
         "whatsapp_formatado": "(24) 99969-1395",
         "instagram": "@cosmetelles2020",
-        "instagram_url": "https://www.instagram.com/cosmetelles2020/"
+        "instagram_url": "https://www.instagram.com/cosmetelles2020/",
+        "site": "radiotelles.com",
+        "site_url": "https://radiotelles.com"
       },
       "sobre": "O Telles Notícias leva informação, notícias e acontecimentos da região para você acompanhar tudo o que acontece de mais importante.",
       "diferenciais": [
@@ -73,7 +75,9 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "whatsapp": "24974004409",
         "whatsapp_formatado": "(24) 97400-4409",
         "instagram": "@lctelles07",
-        "instagram_url": "https://www.instagram.com/lctelles07/"
+        "instagram_url": "https://www.instagram.com/lctelles07/",
+        "site": "",
+        "site_url": ""
       },
       "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.\n\nEstou sempre praticando e aprendendo novos cortes e tendências para garantir que você saia daqui satisfeito e com o visual que deseja. Para mim, a barbearia vai além de um simples corte de cabelo ou barba — é uma experiência. Estou pronto para atender você com profissionalismo e qualidade!",
       "diferenciais": [
