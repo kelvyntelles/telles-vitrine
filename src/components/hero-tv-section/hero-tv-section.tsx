@@ -15,7 +15,7 @@ export const HeroTvSection = () => {
 
                     <p className="mt-4 max-w-lg text-sm leading-6 text-content-secondary md:text-base">
                         Encontre negócios, produtos e serviços da nossa região.
-                        <br className="hidden md:block" />
+                        <br />
                         Tudo em um só lugar, de forma simples e rápida.
                     </p>
                 </div>
