@@ -29,18 +29,20 @@ export default function Home() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-          {anunciosAtivos.map((anuncio) => (
-            <AnuncioCard 
-              key={anuncio.id} 
-              imagemLogo={anuncio.logo}
-              categoria={anuncio.categoria}
-              nome={anuncio.nome}
-              descricao={anuncio.descricao}
-              localizacao={`${anuncio.localizacao.cidade} - ${anuncio.localizacao.estado}`}
-              slug={anuncio.slug}
-            />
-          ))}
+        <div className="flex flex-col gap-6">
+            {anunciosAtivos.map((anuncio, index) => (
+                <AnuncioCard
+                    key={anuncio.id}
+                    imagemLogo={anuncio.logo}
+                    imagemCapa={anuncio.capa}
+                    categoria={anuncio.categoria}
+                    nome={anuncio.nome}
+                    descricao={anuncio.descricao}
+                    localizacao={`${anuncio.localizacao.cidade} - ${anuncio.localizacao.estado}`}
+                    slug={anuncio.slug}
+                    imagemEsquerda={index % 2 === 0}
+                />
+            ))}
         </div>
       </div>
       
