@@ -22,7 +22,7 @@ export const BannerAnuncio = ({
             {/* Badge sobreposto à borda */}
             <span
                 className="
-                    absolute left-0 top-3.75 z-10
+                    absolute left-0 -top-2 z-10
                     inline-flex -translate-y-1/2
                     items-center gap-1.5
                     rounded-full border border-neutral-700

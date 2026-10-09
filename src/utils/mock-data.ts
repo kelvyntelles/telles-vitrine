@@ -8,8 +8,8 @@ export const ANUNCIOS_DATA: Anuncio[] = [
       "nome": "Telles Notícias",
       "categoria": "Jornal",
       "descricao": "Informação local com credibilidade, agilidade e compromisso com a nossa região.",
-      "logo": "/images/telles-noticias/logo.png",
-      "capa": "/images/telles-noticias/capa.jpeg",
+      "logo": "/images/telles-noticias/logo-telles.jpeg",
+      "capa": "/images/telles-noticias/capa-jornal.jpeg",
       "localizacao": {
         "cidade": "Vassouras",
         "estado": "RJ",

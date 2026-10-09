@@ -27,7 +27,7 @@ export default function Home() {
           <BannerAnuncio
               nome="Rádio Telles Notícias"
               imagem="/images/banners/radio-telles.png"
-              href=""
+              href="https://radiotelles.com/"
           />
 
           <section>
