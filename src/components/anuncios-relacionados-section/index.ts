@@ -1,0 +1,1 @@
+export * from "./anuncios-relacionados-section";

@@ -1,141 +1,149 @@
+"use client";
+
+import { AnuncioNotFound } from "@/components/anuncio-not-found";
+import { AnunciosRelacionadosSection } from "@/components/anuncios-relacionados-section";
 import { ContatoSection } from "@/components/contato-section";
 import { Footer } from "@/components/footer";
+import { GaleriaSection } from "@/components/galeria-section/galeria-section";
 import { Header } from "@/components/header";
-import { HeroAnuncioSection } from "@/components/hero-anuncio-section";
-import { Logo } from "@/components/logo";
-import { SectionHeader } from "@/components/section-header/section-header";
-import { ServicoCard } from "@/components/servico-card";
+import { HeroAnuncio } from "@/components/hero-anuncio";
+import { InformacoesRapidasSection } from "@/components/informacoes-rapidas-section";
+import { ServicosSection } from "@/components/servicos-section/servicos-section";
+import { SobreSection } from "@/components/sobre-section";
 import { Anuncio } from "@/types/Anuncio";
 import { ANUNCIOS_DATA } from "@/utils";
-import { FaceSlightlyFrowning } from "lucide-react";
+import {
+    ArrowLeft,
+    ArrowRight,
+    ArrowUpRight,
+    CheckCircle2,
+    Images,
+    MapPin,
+    MessageCircle,
+    Navigation,
+    Phone,
+    Sparkles,
+    X,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useState } from "react";
 
-export default async function AnuncioPage({
-    params,
-}: {
-    params: Promise<{ slug: string }>;
-}) {
-    const { slug } = await params;
+export default function AnuncioPage() {
+    const params = useParams<{ slug: string }>();
+    const slug = params.slug;
 
     const anuncio = ANUNCIOS_DATA.find(
-        (anuncio: Anuncio) => anuncio.slug === slug
+        (item: Anuncio) => item.slug === slug
     );
 
     if (!anuncio || !anuncio.ativo) {
-        return (
-            <div className="flex h-screen flex-col items-center justify-center gap-2">
-                <Logo />
-
-                <h1 className="flex items-center gap-2 text-2xl">
-                    Anúncio não encontrado
-                    <FaceSlightlyFrowning />
-                </h1>
-
-                <Link href="/" className="text-brand">
-                    Lista de anúncios
-                </Link>
-            </div>
-        );
+        return <AnuncioNotFound />;
     }
 
+    const whatsapp = anuncio.contato.whatsapp.replace(/\D/g, "");
+
+    const mensagem = encodeURIComponent(
+        `Olá! Conheci a ${anuncio.nome} pelo Vitrine+ e gostaria de mais informações.`
+    );
+
+    const whatsappUrl = `https://wa.me/55${whatsapp}?text=${mensagem}`;
+
+    const endereco = anuncio.localizacao.endereco?.trim();
+
+    const enderecoCompleto = [
+        endereco,
+        anuncio.localizacao.cidade,
+        anuncio.localizacao.estado,
+    ]
+        .filter(Boolean)
+        .join(", ");
+
+    const mapaUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        enderecoCompleto
+    )}`;
+
+    const temGaleria = Boolean(anuncio.galeria?.length);
+
     return (
-        <div className="flex min-h-screen flex-col">
-            <Header />
+        <main className="min-h-screen overflow-hidden bg-[#151515] text-white">
+            {/* Header */}
+            <Header isAnuncioPage={true} />
 
-            <main className="flex-1">
-                <HeroAnuncioSection
-                    capa={anuncio.capa}
-                    logo={anuncio.logo}
-                    nome={anuncio.nome}
-                    categoria={anuncio.categoria}
-                    descricao={anuncio.descricao}
-                    localizacao={`${anuncio.localizacao.cidade} - ${anuncio.localizacao.estado}`}
-                    whatsapp={anuncio.contato.whatsapp}
+            {/* Hero */}
+            <HeroAnuncio 
+                capa={anuncio.capa}
+                logo={anuncio.logo}
+                nome={anuncio.nome}
+                descricao={anuncio.descricao}
+                categoria={anuncio.categoria}
+                whatsappUrl={whatsappUrl}
+                mapaUrl={mapaUrl}
+                cidade={anuncio.localizacao.cidade}
+                estado={anuncio.localizacao.estado}
+                enderecoCompleto={enderecoCompleto}
+            />
+
+            {/* Informações rápidas */}
+            <InformacoesRapidasSection
+                cidade={anuncio.localizacao.cidade}
+                estado={anuncio.localizacao.estado}
+                endereco={endereco}
+                whatsappUrl={whatsappUrl}
+                categoria={anuncio.categoria}
+            />
+
+            {/* Sobre nós */}
+            {anuncio.sobre && (
+                <SobreSection 
+                    sobre={anuncio.sobre}
+                    diferenciais={anuncio.diferenciais}
                 />
+            )}
 
-                <div className="meu-container pt-0 md:pt-6">
-                    {/* Sobre nós */}
-                    <section className="pb-8">
-                        <SectionHeader
-                            titulo="Sobre nós"
-                            subtitulo={anuncio.sobre}
-                        />
+            {/* Serviços */}
+            {anuncio.servicos?.length ? (
+                <ServicosSection 
+                    anuncioNome={anuncio.nome}
+                    whatsappUrl={whatsappUrl}
+                    servicos={anuncio.servicos}
+                />
+            ) : null}
 
-                        {anuncio.diferenciais?.length ? (
-                            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-6">
-                                {anuncio.diferenciais.map((diferencial, index) => (
-                                    <ServicoCard
-                                        key={index}
-                                        nome={diferencial}
-                                    />
-                                ))}
-                            </div>
-                        ) : null}
-                    </section>
+            {/* Galeria */}
+            {temGaleria && (
+                <GaleriaSection 
+                    anuncioNome={anuncio.nome}
+                    galeria={anuncio.galeria}
+                />
+            )}
 
-                    {/* Serviços */}
-                    {anuncio.servicos?.length ? (
-                        <section className="pb-8">
-                            <SectionHeader
-                                titulo="Nossos serviços"
-                                subtitulo="Confira o que temos de melhor para você."
-                            />
+            {/* Localização e contato */}
+            <ContatoSection 
+                whatsappUrl={whatsappUrl}
+                enderecoCompleto={enderecoCompleto}
+                mapaUrl={mapaUrl}
+                instagramUrl={anuncio.contato.instagram_url}
+                horarios={anuncio.horarios}
+            />
 
-                            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
-                                {anuncio.servicos.map((servico, index) => (
-                                    <ServicoCard
-                                        key={index}
-                                        nome={servico.nome}
-                                        descricao={servico.descricao}
-                                    />
-                                ))}
-                            </div>
-                        </section>
-                    ) : null}
+            {/* Outros anúncios */}
+            <AnunciosRelacionadosSection anuncioSlug={anuncio.slug} />
 
-                    {/* Galeria */}
-                    {anuncio.galeria?.length ? (
-                        <section className="pb-8">
-                            <SectionHeader
-                                titulo="Galeria"
-                                subtitulo="Confira alguns momentos especiais do nosso espaço e dos nossos serviços."
-                            />
-
-                            <div className="
-                                mt-5
-                                flex gap-3 overflow-x-auto pb-3
-                                md:grid md:grid-cols-3
-                                lg:grid-cols-4
-                                md:overflow-x-visible
-                            ">
-                                {anuncio.galeria.map((imagem, index) => (
-                                    <div
-                                        key={index}
-                                        className="
-                                            relative h-48 w-64 shrink-0
-                                            overflow-hidden rounded-lg
-                                            md:h-56 md:w-full
-                                        "
-                                    >
-                                        <Image
-                                            src={imagem}
-                                            alt={`Imagem ${index + 1} da galeria de ${anuncio.nome}`}
-                                            fill
-                                            className="object-cover transition-transform duration-300 hover:scale-105"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
-                    ) : null}
-
-                    {/* Contato */}
-                    <ContatoSection anuncio={anuncio} />
-                </div>
-            </main>
-
+            {/* Rodapé */}
             <Footer />
-        </div>
+
+            {/* Botão flutuante de WhatsApp */}
+            <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Falar com ${anuncio.nome} pelo WhatsApp`}
+                className="fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full border border-white/10 bg-[#9282FA] text-[#151515] shadow-xl shadow-black/30 transition hover:scale-105 hover:bg-[#A99CFF] md:bottom-7 md:right-7"
+            >
+                <MessageCircle size={25} />
+            </a>
+        </main>
     );
 }

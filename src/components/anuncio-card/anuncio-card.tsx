@@ -38,7 +38,7 @@ export const AnuncioCard = ({
         <Card
             className={`
                 group flex h-full w-full flex-col overflow-hidden
-                border border-neutral-800 bg-background-primary
+                border border-white/8 bg-[#202024]
                 p-0 shadow-none ring-0
                 transition-all duration-200
                 hover:-translate-y-1 hover:border-neutral-700
