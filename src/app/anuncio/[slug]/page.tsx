@@ -125,6 +125,8 @@ export default function AnuncioPage() {
                 enderecoCompleto={enderecoCompleto}
                 mapaUrl={mapaUrl}
                 instagramUrl={anuncio.contato.instagram_url}
+                siteUrl={anuncio.contato.site_url}
+                site={anuncio.contato.site}
                 horarios={anuncio.horarios}
             />
 

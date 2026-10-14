@@ -5,6 +5,7 @@ import {
     MapPin,
     MessageCircle,
     Phone,
+    Globe,
 } from "lucide-react";
 
 type ContatoSectionProps = {
@@ -12,6 +13,8 @@ type ContatoSectionProps = {
     enderecoCompleto: string;
     mapaUrl: string;
     instagramUrl: string;
+    site?:string;
+    siteUrl?: string;
     horarios?: {
         dia: string;
         horario: string;
@@ -23,6 +26,8 @@ export const ContatoSection = ({
     enderecoCompleto,
     mapaUrl,
     instagramUrl,
+    site,
+    siteUrl,
     horarios,
 }: ContatoSectionProps) => {
     return (
@@ -228,6 +233,37 @@ export const ContatoSection = ({
 
                                             <span className="mt-1 block text-xs text-[#98959D]">
                                                 Acompanhe nossas novidades
+                                            </span>
+                                        </span>
+                                    </span>
+
+                                    <ArrowUpRight
+                                        size={20}
+                                        className="text-[#A99CFF]"
+                                    />
+                                </a>
+                            )}
+
+                            {/* Site no cartão */}
+                            {siteUrl && (
+                                <a
+                                    href={siteUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-[#9282FA]/40 hover:bg-white/6"
+                                >
+                                    <span className="flex items-center gap-3">
+                                        <span className="flex size-11 items-center justify-center rounded-xl bg-[#9282FA] text-[#151515]">
+                                            <Globe size={20} />
+                                        </span>
+
+                                        <span className="text-left">
+                                            <span className="block font-semibold">
+                                                Site
+                                            </span>
+
+                                            <span className="mt-1 block text-xs text-[#98959D]">
+                                                Acesse {site}
                                             </span>
                                         </span>
                                     </span>
