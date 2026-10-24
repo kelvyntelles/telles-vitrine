@@ -1,7 +1,6 @@
 "use client";
 
 import { AnuncioNotFound } from "@/components/anuncio-not-found";
-import { AnunciosRelacionadosSection } from "@/components/anuncios-relacionados-section";
 import { ContatoSection } from "@/components/contato-section";
 import { Footer } from "@/components/footer";
 import { GaleriaSection } from "@/components/galeria-section/galeria-section";
@@ -12,23 +11,8 @@ import { ServicosSection } from "@/components/servicos-section/servicos-section"
 import { SobreSection } from "@/components/sobre-section";
 import { Anuncio } from "@/types/Anuncio";
 import { ANUNCIOS_DATA } from "@/utils";
-import {
-    ArrowLeft,
-    ArrowRight,
-    ArrowUpRight,
-    CheckCircle2,
-    Images,
-    MapPin,
-    MessageCircle,
-    Navigation,
-    Phone,
-    Sparkles,
-    X,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 import { useParams } from "next/navigation";
-import { useState } from "react";
 
 export default function AnuncioPage() {
     const params = useParams<{ slug: string }>();
@@ -130,11 +114,8 @@ export default function AnuncioPage() {
                 horarios={anuncio.horarios}
             />
 
-            {/* Outros anúncios */}
-            <AnunciosRelacionadosSection anuncioSlug={anuncio.slug} />
-
             {/* Rodapé */}
-            <Footer />
+            <Footer isAnuncioPage={true} />
 
             {/* Botão flutuante de WhatsApp */}
             <a
