@@ -36,8 +36,8 @@ export const ContatoSection = ({
                 <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
                     {/* Informações de contato */}
                     <div>
-                        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-[#A99CFF]">
-                            <span className="h-px w-8 bg-[#9282FA]" />
+                        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-brand">
+                            <span className="h-px w-8 bg-brand" />
                             ESTAMOS AQUI PARA VOCÊ
                         </div>
 
@@ -55,7 +55,7 @@ export const ContatoSection = ({
                             href={whatsappUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-8 inline-flex min-h-14 items-center justify-center gap-3 rounded-xl bg-[#9282FA] px-6 py-4 font-bold text-[#151515] transition hover:-translate-y-0.5 hover:bg-[#A99CFF]"
+                            className="mt-8 inline-flex min-h-14 items-center justify-center gap-3 rounded-xl bg-brand px-6 py-4 font-bold text-[#151515] transition hover:-translate-y-0.5 hover:bg-brand"
                         >
                             <MessageCircle size={21} />
                             Entre em contato
@@ -65,7 +65,7 @@ export const ContatoSection = ({
                         {/* Localização */}
                         {enderecoCompleto && (
                             <div className="mt-10 flex items-start gap-4 border-t border-white/8 pt-7">
-                                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                                     <MapPin size={21} />
                                 </div>
 
@@ -82,7 +82,7 @@ export const ContatoSection = ({
                                         href={mapaUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#A99CFF] hover:text-white"
+                                        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-white"
                                     >
                                         Abrir no Google Maps
                                         <ArrowUpRight size={15} />
@@ -94,7 +94,7 @@ export const ContatoSection = ({
                         {/* Instagram */}
                         {instagramUrl && (
                             <div className="mt-6 flex items-start gap-4 border-t border-white/8 pt-6">
-                                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                                     <Camera size={21} />
                                 </div>
 
@@ -112,7 +112,7 @@ export const ContatoSection = ({
                                         href={instagramUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#A99CFF] transition hover:text-white"
+                                        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-brand transition hover:text-white"
                                     >
                                         Visitar Instagram
                                         <ArrowUpRight size={15} />
@@ -124,14 +124,14 @@ export const ContatoSection = ({
 
                     {/* Cartão de contato e horários */}
                     <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/8 bg-[#202024] p-6 sm:p-9 md:p-10">
-                        <div className="absolute -right-20 -top-20 size-64 rounded-full bg-[#9282FA]/10 blur-3xl" />
+                        <div className="absolute -right-20 -top-20 size-64 rounded-full bg-brand/10 blur-3xl" />
 
                         <div className="relative">
-                            <div className="mb-8 flex size-14 items-center justify-center rounded-2xl bg-[#9282FA]/10 text-[#A99CFF]">
+                            <div className="mb-8 flex size-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
                                 <MessageCircle size={27} />
                             </div>
 
-                            <p className="text-sm font-semibold uppercase tracking-widest text-[#A99CFF]">
+                            <p className="text-sm font-semibold uppercase tracking-widest text-brand">
                                 Atendimento direto
                             </p>
 
@@ -150,7 +150,7 @@ export const ContatoSection = ({
                             {horarios && horarios.length > 0 && (
                                 <div className="rounded-xl border border-white/8 bg-white/3 p-4">
                                     <div className="mb-4 flex items-center gap-3">
-                                        <span className="flex size-10 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                                        <span className="flex size-10 items-center justify-center rounded-xl bg-brand/10 text-brand">
                                             <Clock3 size={20} />
                                         </span>
 
@@ -189,10 +189,10 @@ export const ContatoSection = ({
                                 href={whatsappUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-[#9282FA]/40 hover:bg-white/6"
+                                className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-brand/40 hover:bg-white/6"
                             >
                                 <span className="flex items-center gap-3">
-                                    <span className="flex size-11 items-center justify-center rounded-xl bg-[#9282FA] text-[#151515]">
+                                    <span className="flex size-11 items-center justify-center rounded-xl bg-brand text-[#151515]">
                                         <Phone size={20} />
                                     </span>
 
@@ -209,7 +209,7 @@ export const ContatoSection = ({
 
                                 <ArrowUpRight
                                     size={20}
-                                    className="text-[#A99CFF]"
+                                    className="text-brand"
                                 />
                             </a>
 
@@ -219,10 +219,10 @@ export const ContatoSection = ({
                                     href={instagramUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-[#9282FA]/40 hover:bg-white/6"
+                                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-brand/40 hover:bg-white/6"
                                 >
                                     <span className="flex items-center gap-3">
-                                        <span className="flex size-11 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                                        <span className="flex size-11 items-center justify-center rounded-xl bg-brand/10 text-brand">
                                             <Camera size={20} />
                                         </span>
 
@@ -239,7 +239,7 @@ export const ContatoSection = ({
 
                                     <ArrowUpRight
                                         size={20}
-                                        className="text-[#A99CFF]"
+                                        className="text-brand"
                                     />
                                 </a>
                             )}
@@ -250,10 +250,10 @@ export const ContatoSection = ({
                                     href={siteUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-[#9282FA]/40 hover:bg-white/6"
+                                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/3 p-4 transition hover:border-brand/40 hover:bg-white/6"
                                 >
                                     <span className="flex items-center gap-3">
-                                        <span className="flex size-11 items-center justify-center rounded-xl bg-[#9282FA] text-[#151515]">
+                                        <span className="flex size-11 items-center justify-center rounded-xl bg-brand text-[#151515]">
                                             <Globe size={20} />
                                         </span>
 
@@ -270,7 +270,7 @@ export const ContatoSection = ({
 
                                     <ArrowUpRight
                                         size={20}
-                                        className="text-[#A99CFF]"
+                                        className="text-brand"
                                     />
                                 </a>
                             )}

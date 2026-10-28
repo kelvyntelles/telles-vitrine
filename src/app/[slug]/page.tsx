@@ -4,7 +4,6 @@ import { AnuncioNotFound } from "@/components/anuncio-not-found";
 import { ContatoSection } from "@/components/contato-section";
 import { Footer } from "@/components/footer";
 import { GaleriaSection } from "@/components/galeria-section/galeria-section";
-import { Header } from "@/components/header";
 import { HeroAnuncio } from "@/components/hero-anuncio";
 import { InformacoesRapidasSection } from "@/components/informacoes-rapidas-section";
 import { ServicosSection } from "@/components/servicos-section/servicos-section";
@@ -51,7 +50,14 @@ export default function AnuncioPage() {
     const temGaleria = Boolean(anuncio.galeria?.length);
 
     return (
-        <main className="min-h-screen overflow-hidden bg-[#151515] text-white">
+        <main 
+            className="min-h-screen overflow-hidden bg-[#151515] text-white"
+            style={
+                {
+                "--brand": anuncio.color_brand || "#9282FA",
+                } as React.CSSProperties
+            }
+        >
             {/* Hero */}
             <HeroAnuncio 
                 capa={anuncio.capa}
@@ -120,7 +126,7 @@ export default function AnuncioPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Falar com ${anuncio.nome} pelo WhatsApp`}
-                className="fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full border border-white/10 bg-[#9282FA] text-[#151515] shadow-xl shadow-black/30 transition hover:scale-105 hover:bg-[#A99CFF] md:bottom-7 md:right-7"
+                className="fixed bottom-5 right-5 z-40 flex size-14 items-center justify-center rounded-full border border-white/10 bg-brand text-[#151515] shadow-xl shadow-black/30 transition hover:scale-105 hover:bg-brand md:bottom-7 md:right-7"
             >
                 <MessageCircle size={25} />
             </a>

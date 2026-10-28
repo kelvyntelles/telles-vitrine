@@ -13,7 +13,7 @@ export const InformacoesRapidasSection = ({ cidade, estado, endereco, whatsappUr
         <section className="relative z-10 mx-auto -mt-2 max-w-7xl px-5 md:px-8">
             <div className="grid overflow-hidden rounded-2xl border border-white/8 bg-[#1C1C20] sm:grid-cols-2 lg:grid-cols-3">
                 <div className="flex items-start gap-4 border-b border-white/[0.07] p-5 sm:border-r lg:border-b-0 lg:p-6">
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                         <MapPin size={21} />
                     </div>
 
@@ -34,7 +34,7 @@ export const InformacoesRapidasSection = ({ cidade, estado, endereco, whatsappUr
                 </div>
 
                 <div className="flex items-start gap-4 border-b border-white/[0.07] p-5 lg:border-b-0 lg:border-r lg:p-6">
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                         <MessageCircle size={21} />
                     </div>
 
@@ -49,7 +49,7 @@ export const InformacoesRapidasSection = ({ cidade, estado, endereco, whatsappUr
                             href={whatsappUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-1 inline-flex items-center gap-1 text-sm text-[#A99CFF] hover:text-white"
+                            className="mt-1 inline-flex items-center gap-1 text-sm text-brand hover:text-white"
                         >
                             Chamar no WhatsApp
                             <ArrowUpRight size={14} />
@@ -58,7 +58,7 @@ export const InformacoesRapidasSection = ({ cidade, estado, endereco, whatsappUr
                 </div>
 
                 <div className="flex items-start gap-4 p-5 sm:col-span-2 lg:col-span-1 lg:p-6">
-                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                    <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                         <Sparkles size={21} />
                     </div>
 

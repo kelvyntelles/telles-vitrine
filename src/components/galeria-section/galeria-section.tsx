@@ -19,8 +19,8 @@ export const GaleriaSection = ({ galeria, anuncioNome }: GaleriaSectionProps) =>
         <section className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
             <div className="mb-10 flex items-end justify-between gap-4">
                 <div>
-                    <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-[#A99CFF]">
-                        <span className="h-px w-8 bg-[#9282FA]" />
+                    <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-brand">
+                        <span className="h-px w-8 bg-brand" />
                         UM POUCO DO NOSSO MUNDO
                     </div>
 
@@ -34,7 +34,7 @@ export const GaleriaSection = ({ galeria, anuncioNome }: GaleriaSectionProps) =>
                     </p>
                 </div>
 
-                <div className="hidden size-12 shrink-0 items-center justify-center rounded-full border border-white/10 text-[#A99CFF] sm:flex">
+                <div className="hidden size-12 shrink-0 items-center justify-center rounded-full border border-white/10 text-brand sm:flex">
                     <Images size={21} />
                 </div>
             </div>

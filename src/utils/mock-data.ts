@@ -6,6 +6,7 @@ export const ANUNCIOS_DATA: Anuncio[] = [
       "ativo": true,
       "slug": "telles-noticias",
       "nome": "Telles Notícias",
+      "color_brand": "",
       "categoria": "Jornal",
       "descricao": "Informação local com credibilidade, agilidade e compromisso com a nossa região.",
       "logo": "/images/telles-noticias/logo-telles.jpeg",
@@ -62,6 +63,7 @@ export const ANUNCIOS_DATA: Anuncio[] = [
       "ativo": true,
       "slug": "daianne-conceicao-personal-trainer",
       "nome": "Daianne Conceição",
+      "color_brand": "#D4AF37",
       "categoria": "Personal Trainer",
       "descricao": "Personal trainer com consultoria online e presencial, focada em saúde, bem-estar, hipertrofia e emagrecimento.",
       "logo": "/images/daianne-conceicao-personal-trainer/logo-03.png",
@@ -72,10 +74,10 @@ export const ANUNCIOS_DATA: Anuncio[] = [
         "endereco": "Tijuca, Zona Norte"
       },
       "contato": {
-        "whatsapp": "21984379788",
-        "whatsapp_formatado": "(21) 98437-9788",
-        "instagram": "@daay.indie96",
-        "instagram_url": "https://www.instagram.com/daay.indie96/",
+        "whatsapp": "21979064095",
+        "whatsapp_formatado": "(21) 97906-4095",
+        "instagram": "@daianedejesus.personal",
+        "instagram_url": "https://www.instagram.com/daianedejesus.personal/",
         "site": "",
         "site_url": ""
       },

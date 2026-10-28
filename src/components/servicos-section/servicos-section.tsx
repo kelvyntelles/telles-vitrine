@@ -17,8 +17,8 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
             <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-24">
                 <div className="mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
                     <div>
-                        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-[#A99CFF]">
-                            <span className="h-px w-8 bg-[#9282FA]" />
+                        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-brand">
+                            <span className="h-px w-8 bg-brand" />
                             O QUE OFERECEMOS
                         </div>
 
@@ -36,7 +36,7 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
                         href={whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 self-start text-sm font-semibold text-[#A99CFF] transition hover:text-white sm:self-auto"
+                        className="inline-flex items-center gap-2 self-start text-sm font-semibold text-brand transition hover:text-white sm:self-auto"
                     >
                         Consulte pelo WhatsApp
                         <ArrowUpRight size={17} />
@@ -47,10 +47,10 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
                     {servicos.map((servico, index) => (
                         <article
                             key={`${servico.nome}-${index}`}
-                            className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-[#202024] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#9282FA]/40 hover:bg-[#242429] sm:p-7"
+                            className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-[#202024] p-6 transition duration-300 hover:-translate-y-1 hover:border-brand/40 hover:bg-[#242429] sm:p-7"
                         >
                             <div className="mb-7 flex items-center justify-between">
-                                <span className="flex size-12 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF] transition group-hover:bg-[#9282FA] group-hover:text-[#151515]">
+                                <span className="flex size-12 items-center justify-center rounded-xl bg-brand/10 text-brand transition group-hover:bg-brand group-hover:text-[#151515]">
                                     <Sparkles size={22} />
                                 </span>
 
@@ -59,7 +59,7 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
                                 </span>
                             </div>
 
-                            <h3 className="text-xl font-bold transition group-hover:text-[#C4B9FF]">
+                            <h3 className="text-xl font-bold transition group-hover:text-brand">
                                 {servico.nome}
                             </h3>
 
@@ -76,7 +76,7 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`Consultar sobre ${servico.nome} pelo WhatsApp`}
-                                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#A99CFF] transition hover:text-white"
+                                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand transition hover:text-white"
                             >
                                 Tenho interesse
                                 <ArrowRight
@@ -85,7 +85,7 @@ export const ServicosSection = ({ whatsappUrl, anuncioNome, servicos }: ServicoP
                                 />
                             </a>
 
-                            <div className="absolute -bottom-12 -right-12 size-32 rounded-full bg-[#9282FA]/4 blur-2xl transition group-hover:bg-[#9282FA]/10" />
+                            <div className="absolute -bottom-12 -right-12 size-32 rounded-full bg-brand/4 blur-2xl transition group-hover:bg-brand/10" />
                         </article>
                     ))}
                 </div>

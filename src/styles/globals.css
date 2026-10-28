@@ -2,30 +2,54 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@theme {
+:root {
+  /* Identidade visual */
+  --brand: #9282FA;
+
+  /* Backgrounds */
   --color-background-primary: #14151D;
   --color-background-secondary: #1e1e1e;
   --color-background-tertiary: #23242C;
-  --color-background-brand: #9282FA;
+  --color-background-brand: var(--brand);
+
+  /* Conteúdo */
   --color-content-primary: #FFFFFF;
   --color-content-secondary: #CCCCCC;
+
+  /* Cores auxiliares */
   --color-primary: #f5f5f5;
   --color-secondary: #ccc;
   --color-accent: #ff4d4d;
-  --color-brand: #9282FA;
   --color-accent-yellow: #F0DC02;
   --color-accent-orange: #F09102;
   --color-accent-blue: #027DF0;
+
+  /* Tema */
+  --background: var(--color-background-primary);
+  --foreground: var(--color-content-primary);
+  --accent: var(--color-accent);
+}
+
+@theme inline {
+  --color-background-primary: var(--color-background-primary);
+  --color-background-secondary: var(--color-background-secondary);
+  --color-background-tertiary: var(--color-background-tertiary);
+  --color-background-brand: var(--color-background-brand);
+
+  --color-content-primary: var(--color-content-primary);
+  --color-content-secondary: var(--color-content-secondary);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-brand: var(--brand);
+  --color-accent-yellow: var(--color-accent-yellow);
+  --color-accent-orange: var(--color-accent-orange);
+  --color-accent-blue: var(--color-accent-blue);
 }
 
 @utility meu-container {
   @apply p-6 md:ps-20 md:pe-20;
-}
-
-:root {
-  --background: var(--color-background-primary);
-  --foreground: var(--color-content-primary);
-  --accent: var(--color-accent);
 }
 
 body {

@@ -18,7 +18,7 @@ export const AnuncioNotFound = () => {
 
             <Link
                 href="/"
-                className="mt-7 inline-flex items-center gap-2 rounded-xl bg-[#9282FA] px-5 py-3 font-semibold text-[#151515] transition hover:bg-[#a99cff]"
+                className="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 font-semibold text-[#151515] transition hover:bg-brand"
             >
                 <ArrowLeft size={18} />
                 Explorar anúncios

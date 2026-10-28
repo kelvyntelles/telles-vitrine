@@ -20,7 +20,7 @@ export const Footer = ({ isAnuncioPage }: FooterProps) => {
                 {isAnuncioPage ? (
                     <Link
                         href="/"
-                        className="inline-flex items-center gap-2 text-sm font-medium text-[#A99CFF] transition hover:text-white"
+                        className="inline-flex items-center gap-2 text-sm font-medium text-brand transition hover:text-white"
                     >
                         Conheça o Vitrine+
                         <ArrowUpRight size={16} />

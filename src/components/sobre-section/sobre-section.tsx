@@ -10,14 +10,14 @@ export const SobreSection = ({ sobre, diferenciais }: SobreSectionProps) => {
         <section className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
                 <div>
-                    <div className="mb-5 flex items-center gap-2 text-sm font-semibold text-[#A99CFF]">
-                        <span className="h-px w-8 bg-[#9282FA]" />
+                    <div className="mb-5 flex items-center gap-2 text-sm font-semibold text-brand">
+                        <span className="h-px w-8 bg-brand" />
                         QUEM SOMOS
                     </div>
 
                     <h2 className="max-w-md text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
                         Mais do que um negócio,{" "}
-                        <span className="text-[#9282FA]">
+                        <span className="text-brand">
                             uma experiência.
                         </span>
                     </h2>
@@ -29,10 +29,10 @@ export const SobreSection = ({ sobre, diferenciais }: SobreSectionProps) => {
                 </div>
 
                 <div className="relative">
-                    <div className="absolute -left-3 -top-3 h-20 w-20 rounded-tl-2xl border-l-2 border-t-2 border-[#9282FA]/60" />
+                    <div className="absolute -left-3 -top-3 h-20 w-20 rounded-tl-2xl border-l-2 border-t-2 border-brand/60" />
 
                     <div className="relative rounded-2xl border border-white/8 bg-[#1C1C20] p-6 sm:p-9 md:p-10">
-                        <div className="mb-5 flex size-12 items-center justify-center rounded-xl bg-[#9282FA]/10 text-[#A99CFF]">
+                        <div className="mb-5 flex size-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
                             <Sparkles size={23} />
                         </div>
 
@@ -54,7 +54,7 @@ export const SobreSection = ({ sobre, diferenciais }: SobreSectionProps) => {
                                         >
                                             <CheckCircle2
                                                 size={18}
-                                                className="mt-0.5 shrink-0 text-[#9282FA]"
+                                                className="mt-0.5 shrink-0 text-brand"
                                             />
                                             <span>{diferencial}</span>
                                         </div>
@@ -64,7 +64,7 @@ export const SobreSection = ({ sobre, diferenciais }: SobreSectionProps) => {
                         ) : null}
                     </div>
 
-                    <div className="absolute -bottom-3 -right-3 h-20 w-20 rounded-br-2xl border-b-2 border-r-2 border-[#9282FA]/60" />
+                    <div className="absolute -bottom-3 -right-3 h-20 w-20 rounded-br-2xl border-b-2 border-r-2 border-brand/60" />
                 </div>
             </div>
         </section>

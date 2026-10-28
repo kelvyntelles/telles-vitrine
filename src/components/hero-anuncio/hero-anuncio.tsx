@@ -36,8 +36,8 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                     <div className="max-w-2xl">
                         {/* Categoria e localização */}
                         <div className="mb-7 flex flex-wrap items-center gap-2">
-                            <span className="inline-flex items-center gap-2 rounded-full border border-[#9282FA]/30 bg-[#9282FA]/10 px-3.5 py-2 text-xs font-semibold text-[#C4B9FF] backdrop-blur-md sm:text-sm">
-                                <span className="size-1.5 rounded-full bg-[#9282FA]" />
+                            <span className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-2 text-xs font-semibold text-brand backdrop-blur-md sm:text-sm">
+                                <span className="size-1.5 rounded-full bg-brand" />
                                 {categoria}
                             </span>
 
@@ -59,13 +59,13 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                             />
                         </div>
 
-                        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#B9ACFF] sm:text-sm">
+                        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-brand sm:text-sm">
                             Conheça nosso negócio
                         </p>
 
                         <h1 className="max-w-xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl md:text-6xl">
                             {nome}
-                            <span className="text-[#9282FA]">.</span>
+                            <span className="text-brand">.</span>
                         </h1>
 
                         <p className="mt-5 max-w-lg text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
@@ -77,7 +77,7 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                                 href={whatsappUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-xl bg-[#9282FA] px-6 py-4 font-bold text-[#151515] shadow-lg shadow-[#9282FA]/10 transition hover:-translate-y-0.5 hover:bg-[#A99CFF]"
+                                className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-xl bg-brand px-6 py-4 font-bold text-[#151515] shadow-lg shadow-brand/10 transition hover:-translate-y-0.5 hover:bg-brand"
                             >
                                 <MessageCircle size={20} />
                                 Falar pelo WhatsApp
@@ -100,7 +100,7 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                         <div className="mt-7 flex items-center gap-2 text-xs text-white/50 sm:text-sm">
                             <CheckCircle2
                                 size={16}
-                                className="text-[#9282FA]"
+                                className="text-brand"
                             />
                             Conheça, encontre e entre em contato.
                         </div>

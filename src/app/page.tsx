@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Apresentação do produto */}
         <section className="py-12 text-center sm:py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#9282FA]">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-brand">
             Sua empresa na internet
           </p>
 
@@ -39,7 +39,7 @@ export default function Home() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-xl bg-[#9282FA] px-8 py-4 font-bold text-[#15151D] transition hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-xl bg-brand px-8 py-4 font-bold text-[#15151D] transition hover:opacity-90"
             >
               Quero minha página
             </a>
@@ -53,9 +53,9 @@ export default function Home() {
         {/* Preço */}
         <section
           id="preco"
-          className="mx-auto mb-16 max-w-2xl rounded-3xl border border-[#9282FA]/30 bg-[#9282FA]/5 p-8 text-center sm:p-12"
+          className="mx-auto mb-16 max-w-2xl rounded-3xl border border-brand/30 bg-brand/5 p-8 text-center sm:p-12"
         >
-          <p className="text-sm font-semibold uppercase tracking-wider text-[#9282FA]">
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand">
             Um preço que cabe no seu bolso
           </p>
 
@@ -78,19 +78,19 @@ export default function Home() {
 
           <ul className="mx-auto mt-8 max-w-md space-y-4 text-left">
             <li className="flex gap-3">
-              <span className="text-[#9282FA]">✓</span>
+              <span className="text-brand">✓</span>
               Página exclusiva para sua empresa
             </li>
             <li className="flex gap-3">
-              <span className="text-[#9282FA]">✓</span>
+              <span className="text-brand">✓</span>
               Fotos, descrição e informações do negócio
             </li>
             <li className="flex gap-3">
-              <span className="text-[#9282FA]">✓</span>
+              <span className="text-brand">✓</span>
               Links de contato e redes sociais
             </li>
             <li className="flex gap-3">
-              <span className="text-[#9282FA]">✓</span>
+              <span className="text-brand">✓</span>
               Um link para divulgar onde quiser
             </li>
           </ul>
@@ -99,7 +99,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-[#9282FA] px-6 py-4 font-bold text-[#15151D] transition hover:opacity-90 sm:w-auto"
+            className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-brand px-6 py-4 font-bold text-[#15151D] transition hover:opacity-90 sm:w-auto"
           >
             Começar agora
           </a>
@@ -117,7 +117,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             <div className="rounded-2xl border border-white/10 p-6">
-              <span className="text-2xl font-bold text-[#9282FA]">
+              <span className="text-2xl font-bold text-brand">
                 01
               </span>
               <h3 className="mt-3 font-bold">
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl border border-white/10 p-6">
-              <span className="text-2xl font-bold text-[#9282FA]">
+              <span className="text-2xl font-bold text-brand">
                 02
               </span>
               <h3 className="mt-3 font-bold">
@@ -143,7 +143,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl border border-white/10 p-6">
-              <span className="text-2xl font-bold text-[#9282FA]">
+              <span className="text-2xl font-bold text-brand">
                 03
               </span>
               <h3 className="mt-3 font-bold">
@@ -172,7 +172,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#9282FA] px-8 py-4 font-bold text-[#15151D] transition hover:opacity-90"
+            className="mt-6 inline-flex items-center justify-center rounded-xl bg-brand px-8 py-4 font-bold text-[#15151D] transition hover:opacity-90"
           >
             Fale com o Vitrine+
           </a>

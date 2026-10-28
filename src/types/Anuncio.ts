@@ -28,6 +28,7 @@ export interface Anuncio {
   ativo: boolean;
   slug: string;
   nome: string;
+  color_brand: string;
   categoria: string;
   descricao: string;
   logo: string;

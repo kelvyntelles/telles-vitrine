@@ -22,7 +22,7 @@ export const Header = ({ isAnuncioPage }: HeaderProps) => {
                 {isAnuncioPage ? (
                     <Link
                         href="/"
-                        className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2.5 text-sm font-medium text-[#C4C1CA] transition hover:border-[#9282FA]/50 hover:text-white"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2.5 text-sm font-medium text-[#C4C1CA] transition hover:border-brand/50 hover:text-white"
                     >   
                         <ArrowUpRight size={16} />
                         Conheça o Vitrine+
