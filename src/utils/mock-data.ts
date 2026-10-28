@@ -60,71 +60,60 @@ export const ANUNCIOS_DATA: Anuncio[] = [
     {
       "id": 2,
       "ativo": true,
-      "slug": "lucas-telles-barbeiro",
-      "nome": "Lucas Telles",
-      "categoria": "Barbearia",
-      "descricao": "Barbeiro especialista em cortes modernos e barbas. Agende seu horário!",
-      "logo": "/images/lucas-telles-barbeiro/perfil.jpg",
-      "capa": "/images/lucas-telles-barbeiro/capa.jpeg",
+      "slug": "daianne-conceicao-personal-trainer",
+      "nome": "Daianne Conceição",
+      "categoria": "Personal Trainer",
+      "descricao": "Personal trainer com consultoria online e presencial, focada em saúde, bem-estar, hipertrofia e emagrecimento.",
+      "logo": "/images/daianne-conceicao-personal-trainer/logo-03.png",
+      "capa": "/images/daianne-conceicao-personal-trainer/foto-01.jpeg",
       "localizacao": {
-        "cidade": "Vassouras",
+        "cidade": "Rio de Janeiro",
         "estado": "RJ",
-        "endereco": "Rua Luiz Capute, 133, Centro"
+        "endereco": "Tijuca, Zona Norte"
       },
       "contato": {
-        "whatsapp": "24974004409",
-        "whatsapp_formatado": "(24) 97400-4409",
-        "instagram": "@lctelles07",
-        "instagram_url": "https://www.instagram.com/lctelles07/",
+        "whatsapp": "21984379788",
+        "whatsapp_formatado": "(21) 98437-9788",
+        "instagram": "@daay.indie96",
+        "instagram_url": "https://www.instagram.com/daay.indie96/",
         "site": "",
         "site_url": ""
       },
-      "sobre": "Me formei na área pela Embelleze e desde então venho me dedicando a oferecer os melhores serviços de barbearia. Realizo cortes clássicos, como o Corte Americano e o Corte Social, além de estilos mais modernos como o Corte Desfarcado (Fade) e o Moicano. Também cuido de barba, bigode, sobrancelha, pigmentação e pintura de cabelo e barba, sempre com atenção aos detalhes e ao estilo de cada cliente.\n\nEstou sempre praticando e aprendendo novos cortes e tendências para garantir que você saia daqui satisfeito e com o visual que deseja. Para mim, a barbearia vai além de um simples corte de cabelo ou barba — é uma experiência. Estou pronto para atender você com profissionalismo e qualidade!",
+      "sobre": "Olá! Sou Daianne Conceição, personal trainer dedicada a promover saúde, bem-estar e qualidade de vida por meio da atividade física. Ofereço consultoria online e atendimento presencial na Tijuca, Zona Norte do Rio de Janeiro.\n\nMeu objetivo é ajudar você a alcançar seus objetivos, seja conquistar hipertrofia, emagrecer ou desenvolver hábitos mais saudáveis. Com orientação e acompanhamento, você pode trabalhar para evoluir de acordo com suas metas e necessidades.\n\nVamos dar o primeiro passo rumo a uma vida mais ativa e saudável? Entre em contato para conhecer as opções de consultoria e atendimento.",
       "diferenciais": [
-        "Profissional experiente",
-        "Ambiente moderno",
-        "Atendimento personalizado",
-        "Produtos de qualidade",
-        "Som ambiente",
-        "Higiene e organização"
+        "Consultoria online",
+        "Atendimento presencial na Tijuca",
+        "Foco em saúde e bem-estar",
+        "Orientação para hipertrofia",
+        "Acompanhamento para emagrecimento",
+        "Treinamento voltado aos seus objetivos"
       ],
       "servicos": [
         {
-          "nome": "Corte Masculino",
-          "descricao": "Cortes modernos e tradicionais para todos os estilos."
+          "nome": "Personal Trainer Presencial",
+          "descricao": "Acompanhamento presencial na Tijuca, Zona Norte do Rio de Janeiro, para ajudar você a treinar com orientação e foco nos seus objetivos."
         },
         {
-          "nome": "Barba",
-          "descricao": "Modelagem e cuidados para manter sua barba impecável."
+          "nome": "Consultoria Online",
+          "descricao": "Orientação a distância para quem busca melhorar a rotina de treinos e cuidar da saúde e do bem-estar."
         },
         {
-          "nome": "Corte + Barba",
-          "descricao": "O combo completo para renovar seu visual."
+          "nome": "Treinamento para Hipertrofia",
+          "descricao": "Orientação de treinamento voltada ao desenvolvimento muscular e à evolução dos seus resultados."
         },
         {
-          "nome": "Transformação Visual",
-          "descricao": "Do clássico platinado aos tons tradicionais que realçam o seu estilo com personalidade."
+          "nome": "Treinamento para Emagrecimento",
+          "descricao": "Acompanhamento com foco na perda de peso, na prática de atividade física e na construção de hábitos mais saudáveis."
         }
       ],
       "galeria": [
-        "/images/lucas-telles-barbeiro/foto-01.jpg",
-        "/images/lucas-telles-barbeiro/foto-02.jpg",
-        "/images/lucas-telles-barbeiro/foto-03.jpg",
-        "/images/lucas-telles-barbeiro/foto-04.jpg",
+        "/images/daianne-conceicao-personal-trainer/foto-01.jpeg",
+        "/images/daianne-conceicao-personal-trainer/foto-02.jpeg",
+        "/images/daianne-conceicao-personal-trainer/foto-03.jpeg",
+        "/images/daianne-conceicao-personal-trainer/foto-04.jpeg",
+        "/images/daianne-conceicao-personal-trainer/foto-05.jpeg",
+        "/images/daianne-conceicao-personal-trainer/foto-06.jpeg"
       ],
-      "horarios": [
-        {
-          "dia": "Segunda a Sexta",
-          "horario": "09:00 às 19:00"
-        },
-        {
-          "dia": "Sábado",
-          "horario": "09:00 às 17:00"
-        },
-        {
-          "dia": "Domingo",
-          "horario": "Fechado"
-        }
-      ],
+      "horarios": []
     }
 ]

@@ -49,13 +49,13 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                         </div>
 
                         {/* Logo */}
-                        <div className="mb-6 flex size-24 items-center justify-center overflow-hidden rounded-2xl border border-white/15 bg-white p-2 shadow-2xl shadow-black/30 sm:size-28">
+                        <div className="mb-6 flex size-28 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-black/30 sm:size-32">
                             <Image
                                 src={logo}
                                 alt={`Logo de ${nome}`}
-                                width={112}
-                                height={112}
-                                className="h-full w-full object-contain"
+                                width={128}
+                                height={128}
+                                className="h-full w-full object-cover"
                             />
                         </div>
 
