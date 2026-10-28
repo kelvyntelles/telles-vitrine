@@ -52,9 +52,6 @@ export default function AnuncioPage() {
 
     return (
         <main className="min-h-screen overflow-hidden bg-[#151515] text-white">
-            {/* Header */}
-            <Header isAnuncioPage={true} />
-
             {/* Hero */}
             <HeroAnuncio 
                 capa={anuncio.capa}
