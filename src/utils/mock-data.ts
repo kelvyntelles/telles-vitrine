@@ -4,59 +4,68 @@ export const ANUNCIOS_DATA: Anuncio[] = [
     {
       "id": 1,
       "ativo": true,
-      "slug": "telles-noticias",
-      "nome": "Telles Notícias",
-      "color_brand": "",
-      "categoria": "Jornal",
-      "descricao": "Informação local com credibilidade, agilidade e compromisso com a nossa região.",
-      "logo": "/images/telles-noticias/logo-telles.jpeg",
-      "capa": "/images/telles-noticias/capa-jornal.jpeg",
+      "slug": "cafe-aurora",
+      "nome": "Café Aurora",
+      "color_brand": "#9282FA",
+      "categoria": "Cafeteria",
+      "descricao": "Café especial, doces artesanais e um ambiente acolhedor para tornar seus momentos ainda mais especiais.",
+      "logo": "/images/cafe-aurora/logo.png",
+      "capa": "/images/cafe-aurora/capa.png",
       "localizacao": {
         "cidade": "Vassouras",
         "estado": "RJ",
         "endereco": "Centro - Vassouras, RJ"
       },
       "contato": {
-        "whatsapp": "24999691395",
-        "whatsapp_formatado": "(24) 99969-1395",
-        "instagram": "@cosmetelles2020",
-        "instagram_url": "https://www.instagram.com/cosmetelles2020/",
-        "site": "radiotelles.com",
-        "site_url": "https://radiotelles.com"
+        "whatsapp": "24999999999",
+        "whatsapp_formatado": "(24) 99999-9999",
+        "instagram": "@cafeaurora",
+        "instagram_url": "https://www.instagram.com/cafeaurora/",
+        "site": "cafeaurora.com.br",
+        "site_url": "https://cafeaurora.com.br"
       },
-      "sobre": "O Telles Notícias leva informação, notícias e acontecimentos da região para você acompanhar tudo o que acontece de mais importante.",
+      "sobre": "O Café Aurora é um espaço pensado para quem aprecia bons cafés, doces artesanais e momentos especiais. Seja para começar o dia, fazer uma pausa na rotina ou encontrar os amigos, oferecemos um ambiente acolhedor para você aproveitar cada visita.",
       "diferenciais": [
-        "Informação local",
-        "Notícias atualizadas",
-        "Credibilidade",
-        "Cobertura regional",
-        "Rádio Telles | radiotelles.com",
-        "Informação e entreterimento",
+        "Cafés preparados na hora",
+        "Doces artesanais",
+        "Ambiente acolhedor",
+        "Opções para o café da manhã",
+        "Atendimento personalizado",
+        "Um espaço para encontrar amigos"
       ],
       "servicos": [
         {
-          "nome": "Notícias Locais",
-          "descricao": "Acompanhe os principais acontecimentos da região."
+          "nome": "Cafés especiais",
+          "descricao": "Bebidas preparadas para quem aprecia o sabor e o aroma de um bom café."
         },
         {
-          "nome": "Publicidade",
-          "descricao": "Divulgue sua empresa para o público local."
+          "nome": "Doces artesanais",
+          "descricao": "Doces e sobremesas para acompanhar seu café favorito."
         },
         {
-          "nome": "Cobertura de Eventos",
-          "descricao": "Cobertura e divulgação de eventos da região."
+          "nome": "Café da manhã",
+          "descricao": "Opções para começar o dia com sabor e tranquilidade."
         }
       ],
       "galeria": [
-        "/images/telles-noticias/foto-01.jpg",
-        "/images/telles-noticias/foto-02.jpeg",
+        "/images/cafe-aurora/capa.png",
+        "/images/cafe-aurora/foto-01.png",
+        "/images/cafe-aurora/foto-02.png"
       ],
       "horarios": [
         {
-          "dia": "Todos os dias",
-          "horario": "24 horas"
+          "dia": "Segunda a sexta",
+          "horario": "08:00 às 18:00"
+        },
+        {
+          "dia": "Sábado",
+          "horario": "08:00 às 14:00"
+        },
+        {
+          "dia": "Domingo",
+          "horario": "Fechado"
         }
-      ],
+      ]
     },
     {
       "id": 2,
