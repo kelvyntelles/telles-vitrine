@@ -8,20 +8,52 @@ import { HeroAnuncio } from "@/components/hero-anuncio";
 import { InformacoesRapidasSection } from "@/components/informacoes-rapidas-section";
 import { ServicosSection } from "@/components/servicos-section/servicos-section";
 import { SobreSection } from "@/components/sobre-section";
+import { buscarAnuncio } from "@/services/anuncios";
 import { Anuncio } from "@/types/Anuncio";
-import { ANUNCIOS_DATA } from "@/utils";
 import { MessageCircle } from "lucide-react";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function AnuncioPage() {
     const params = useParams<{ slug: string }>();
     const slug = params.slug;
 
-    const anuncio = ANUNCIOS_DATA.find(
-        (item: Anuncio) => item.slug === slug
-    );
+    const [anuncio, setAnuncio] = useState<Anuncio | null>(null);
+    const [carregando, setCarregando] = useState(true);
+    const [naoEncontrado, setNaoEncontrado] = useState(false);
 
-    if (!anuncio || !anuncio.ativo) {
+    useEffect(() => {
+        async function carregarAnuncio() {
+            try {
+                setCarregando(true);
+                setNaoEncontrado(false);
+
+                const dados = await buscarAnuncio(slug);
+                setAnuncio(dados);
+            } catch (error) {
+                setAnuncio(null);
+
+                if (
+                    error instanceof Error &&
+                    error.message === "Anúncio não encontrado"
+                ) {
+                    setNaoEncontrado(true);
+                } else {
+                    console.error("Erro ao carregar anúncio:", error);
+                }
+            } finally {
+                setCarregando(false);
+            }
+        }
+
+        carregarAnuncio();
+    }, [slug]);
+
+    if (carregando) {
+        return <p>Carregando anúncio...</p>;
+    }
+
+    if (naoEncontrado || !anuncio) {
         return <AnuncioNotFound />;
     }
 

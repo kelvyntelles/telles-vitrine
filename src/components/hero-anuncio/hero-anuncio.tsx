@@ -59,6 +59,8 @@ export const HeroAnuncio = ({categoria, nome, descricao, capa, logo, whatsappUrl
                             />
                         </div>
 
+                        <p>{logo}</p>
+
                         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-brand sm:text-sm">
                             Conheça nosso negócio
                         </p>
